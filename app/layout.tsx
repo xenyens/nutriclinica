@@ -1,5 +1,6 @@
 import './globals.css'
 import NavbarComponent from '../components/NavbarComponent'
+import { FootBarComponent } from '../components/FootBarComponent'
 
 export const metadata = {
   title: 'Nutrición Clínica - Ana Karen Juárez',
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body>
         <NavbarComponent/>
         {children}
+        <FootBarComponent/>
       </body>
     </html>
   )
