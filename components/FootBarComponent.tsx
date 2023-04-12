@@ -23,12 +23,12 @@ export const FootBarComponent = () => {
             >
            <ul className="text-center">
               <Link href={'/ubicacion'}><li className="text-sm p-2 rounded-md hover:cursor-pointer hover:text-white hover:bg-fuchsia-900">Ubicación</li></Link>
-              <Link href={'/'}><li className="text-sm p-2 rounded-md hover:cursor-pointer hover:text-white hover:bg-fuchsia-900">Centificaciones</li></Link>
+              
            </ul>
 
            <ul className="text-center">
-              <Link href={'/ubicacion'}><li className="text-sm p-2 rounded-md hover:cursor-pointer hover:text-white hover:bg-fuchsia-900">Ubicación</li></Link>
-              <Link href={'/'}><li className="text-sm p-2 rounded-md hover:cursor-pointer hover:text-white hover:bg-fuchsia-900">Centificaciones</li></Link>
+              <Link href={'/ubicacion'}><li className="text-sm p-2 rounded-md hover:cursor-pointer hover:text-white hover:bg-fuchsia-900">Certificaciones</li></Link>
+              
            </ul>
            
         </div>
@@ -36,7 +36,7 @@ export const FootBarComponent = () => {
         <div className="mt-3 bg-black flex justify-center  "><Image src={Banner}  alt="logo" priority /></div>
         
         <div className="flex justify-evenly my-5">            
-            <div><p>Copyright &copy;2023 All Rights Reserved </p></div>            
+            <div><p>Copyright &copy; 2023. All Rights Reserved </p></div>            
             
             <div className="flex space-x-3">
               <div ><FaInstagram size={25} color="#c32aa3"/></div>

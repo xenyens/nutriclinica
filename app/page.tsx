@@ -10,10 +10,8 @@ export default function Home() {
         flex                
         flex-col
         items-center
-        md:p-24
+        p-36
         px-16
-        mt-5
-        md:mt-0
         "
     >
       <h1 className="text-sm md:text-xl">NUTRICIÓN CLÍNICA</h1>

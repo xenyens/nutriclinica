@@ -13,18 +13,18 @@ interface Props {
 
 export const CardComponent = ({ title, subtitle, content, path }: Props) => {
   return (
-    <Card css={{ maxWidth: 400, marginTop: '$15' }} className={lato.className}>
-      <Card.Header css={{ backgroundColor: "#303952" }}>
+    <Card css={{ maxWidth: 400, backgroundColor:'#f9ece4'}} className={`${lato.className}`}>
+      <Card.Header css={{ backgroundColor: "#99df7b" }}>
         <Col>
           <Text
             size={14}
             weight={"bold"}
             transform="uppercase"
-            css={{ color: "$white" }}
+            
           >
             {title}
           </Text>
-          <Text size={25} css={{ color: "$white" }}>
+          <Text size={25} >
             {subtitle}
           </Text>
         </Col>
@@ -35,12 +35,11 @@ export const CardComponent = ({ title, subtitle, content, path }: Props) => {
           {content}
         </Text>
         <Link href={path}>
-          <Button 
-            color={'error'}
+          <Button
+            color={"success"}            
             auto
             ghost
             css={{width:'100%', marginTop:'$5'}}
-
           >Saber más
           </Button>
         </Link>

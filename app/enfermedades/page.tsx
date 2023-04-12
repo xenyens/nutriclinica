@@ -5,8 +5,9 @@ import { Grid } from "@nextui-org/react";
 export default function EnfermedadesPage() {
   return (
     <>
-      <Grid.Container className="mt-16 justify-evenly" css={{zIndex:0}}>
-        <Grid className="mb-3">
+      <div className="pt-40">
+      <Grid.Container className="justify-evenly">
+        <Grid className="mb-5">
           <CardComponent
             title="Hipertensión"
             subtitle="Recomendaciones Nutricionales"
@@ -14,7 +15,7 @@ export default function EnfermedadesPage() {
             path="/enfermedades/hipertension"
           />
         </Grid>
-        <Grid className="mb-3">
+        <Grid className="mb-5">
           <CardComponent
             title="Colitis"
             subtitle="Recomendaciones Nutricionales"
@@ -22,7 +23,7 @@ export default function EnfermedadesPage() {
             path="/enfermedades/colitis"
           />
         </Grid>
-        <Grid className="mb-3">
+        <Grid className="mb-5">
           <CardComponent
             title="Dislipidemias"
             subtitle="Recomendaciones Nutricionales"
@@ -30,7 +31,7 @@ export default function EnfermedadesPage() {
             path="/enfermedades/dislipidemia"
           />
         </Grid>
-        <Grid className="mb-3">
+        <Grid className="mb-5">
           <CardComponent
             title="Síndrome Ovario Poliquístico"
             subtitle="Recomendaciones Nutricionales"
@@ -39,6 +40,7 @@ export default function EnfermedadesPage() {
           />
         </Grid>
       </Grid.Container>
+      </div>
     </>
   );
 }

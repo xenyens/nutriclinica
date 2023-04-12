@@ -49,7 +49,7 @@ export default function NavbarComponent() {
   }
 
   return (
-    <nav className="w-full h-28 shadow-md bg-[#e66767] ">
+    <nav className="fixed w-full h-28 shadow-md bg-[#e66767] z-50">
       <div className="flex justify-between items-center h-full w-full px-10 2xl:px-16 text-white ">
         <Link href={'/'}><Image src={Logo} width={75} height={75} alt="logo" priority /></Link>
         {/* Main menu */}
@@ -69,11 +69,11 @@ export default function NavbarComponent() {
         <div
           className={
             menuOpen
-              ? "fixed z-10 left-0 top-0 w-[70%] md:hidden h-screen bg-[#333] text-white p-10 ease-out duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in-out duration-500"
+              ? "fixed z-50 right-0 top-0 w-[70%] md:hidden h-screen bg-[#333] text-white p-10 ease-out duration-500"
+              : "fixed right-[-100%] top-0 p-10 ease-in-out duration-500"
           }
         >
-          <div className="flex w-full justify-end items-center">
+          <div className="flex w-full items-center">
             <div onClick={handleMenu} className="cursor-pointer">
               <AiOutlineClose size={25}/>
             </div>
