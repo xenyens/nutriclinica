@@ -3,31 +3,62 @@ import { useState } from "react";
 import Image from "next/image";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Logo from "../public/logo.png";
+import Banner from "../public/banner.jpeg";
 import Link from "next/link";
+
+const rutasMobile = [
+  {
+    ruta: '/',
+    label: 'Inicio'
+  },
+  {
+    ruta: '/equivalentes',
+    label: 'Equivalentes'
+  },
+  {
+    ruta: '/enfermedades',
+    label: 'Enfermedades'
+  },
+  {
+    ruta: '/ubicacion',
+    label: 'Ubicación'
+  },
+]
+
+const rutas = [
+  {
+    ruta: '/',
+    label: 'Inicio'
+  },
+  {
+    ruta: '/equivalentes',
+    label: 'Equivalentes'
+  },
+  {
+    ruta: '/enfermedades',
+    label: 'Enfermedades'
+  },
+]
 
 export default function NavbarComponent() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   function handleMenu() {
     setMenuOpen(!menuOpen);
-    console.log("click....");
+    
   }
 
   return (
-    <nav className=" w-full h-28 shadow-md bg-[#e66767] ">
+    <nav className="w-full h-28 shadow-md bg-[#e66767] ">
       <div className="flex justify-between items-center h-full w-full px-10 2xl:px-16 text-white ">
-        <Image src={Logo} width={75} height={75} alt="logo" priority />
+        <Link href={'/'}><Image src={Logo} width={75} height={75} alt="logo" priority /></Link>
         {/* Main menu */}
         <div className="sm:flex hidden space-x-3">
-          <Link href={"/"}>
-            <h1 className=" uppercase hover:border-b text-xl hover:text-black">INICIO</h1>
-          </Link>
-          <Link href={"/equivalentes"}>
-            <h1 className="uppercase hover:border-b text-xl hover:text-black">EQUIVALENTES</h1>
-          </Link>
-          <Link href={"/enfermedades"}>
-            <h1 className="uppercase hover:border-b text-xl hover:text-black">ENFERMEDADES</h1>
-          </Link>
+          {rutas.map(ruta =>(
+            <Link href={ruta.ruta} key={ruta.label}>
+               <h1 className=" uppercase hover:border-b font-bold hover:text-black">{ruta.label}</h1>
+            </Link>
+          ))}
         </div>
 
 
@@ -50,23 +81,14 @@ export default function NavbarComponent() {
 
           {/* Display menu mobile */}
           <div className="flex-col space-y-10 mt-3 h-screen">
-              <div>
-                <Link href={"/"}>
-                  <h1 className="uppercase hover:border-b text-xl" onClick={handleMenu}>INICIO</h1>
-                </Link>
-              </div>
-              <div>
-                <Link href={"/equivalentes"}>
-                  <h1 className="uppercase hover:border-b text-xl"onClick={handleMenu}>EQUIVALENTES</h1>
-                </Link>
-              </div>
-              <div>
-                <Link href={"/enfermedades"}>
-                  <h1 className="uppercase hover:border-b text-xl"onClick={handleMenu}>ENFERMEDADES</h1>
-                </Link>
-              </div>
-
-              <Image src={Logo} width={100} height={100} alt="logo" priority className="justify-center" />
+          {rutasMobile.map(ruta =>(
+            <Link href={ruta.ruta} key={ruta.label}>
+               <h1
+                onClick={handleMenu} 
+                className="mt-5 uppercase hover:border-b text-xl hover:text-green-500">{ruta.label}</h1>
+            </Link>
+          ))}
+              <Image src={Banner} width={200} alt="logo" priority className="justify-center" />
             </div>
           
           
