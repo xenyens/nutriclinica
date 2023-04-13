@@ -3,7 +3,7 @@ import {FaWhatsapp} from 'react-icons/fa'
 
 const UbicacionPage = () => {
   return (
-    <div className="flex items-center space-y-6 mt-16 flex-col">
+    <div className="flex items-center space-y-6 pt-36 flex-col">
         <div>
             <h1 className="text-xl font-bold uppercase">Ubicación</h1>
         </div>

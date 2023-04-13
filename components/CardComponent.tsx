@@ -13,7 +13,7 @@ interface Props {
 
 export const CardComponent = ({ title, subtitle, content, path }: Props) => {
   return (
-    <Card css={{ maxWidth: 400, backgroundColor:'#f9ece4'}} className={`${lato.className}`}>
+    <Card css={{ maxWidth: 400, backgroundColor:'#f9ece4'}} className={`${lato.className} mb-4`}>
       <Card.Header css={{ backgroundColor: "#99df7b" }}>
         <Col>
           <Text
