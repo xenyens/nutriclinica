@@ -6,8 +6,8 @@ export default function EnfermedadesPage() {
   return (
     <>
       <div className="pt-40">
-      <Grid.Container className="justify-evenly">
-        <Grid className="mb-5">
+      <Grid.Container className="justify-evenly" gap={2}>
+        <Grid>
           <CardComponent
             title="Hipertensión"
             subtitle="Recomendaciones Nutricionales"
@@ -15,7 +15,7 @@ export default function EnfermedadesPage() {
             path="/enfermedades/hipertension"
           />
         </Grid>
-        <Grid className="mb-5">
+        <Grid>
           <CardComponent
             title="Colitis"
             subtitle="Recomendaciones Nutricionales"
@@ -23,7 +23,7 @@ export default function EnfermedadesPage() {
             path="/enfermedades/colitis"
           />
         </Grid>
-        <Grid className="mb-5">
+        <Grid>
           <CardComponent
             title="Dislipidemias"
             subtitle="Recomendaciones Nutricionales"
@@ -31,7 +31,7 @@ export default function EnfermedadesPage() {
             path="/enfermedades/dislipidemia"
           />
         </Grid>
-        <Grid className="mb-5">
+        <Grid>
           <CardComponent
             title="Síndrome Ovario Poliquístico"
             subtitle="Recomendaciones Nutricionales"

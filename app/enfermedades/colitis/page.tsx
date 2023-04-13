@@ -26,7 +26,7 @@ export default function HipertensionPage() {
             <div className="md:col-span-2">
               <h1 className="subtitle text-xl font-bold">Definición</h1>
               <ul className="ml-3 mt-2 mb-5 space-y-4">
-                <li className="bg-green-100 rounded-md p-2">La colitis es una inflamación en el color (intestino grueso).</li>
+                <li className="bg-green-100 rounded-md p-2">La colitis es una inflamación en el colon (intestino grueso).</li>
                 
                 </ul>
             </div>

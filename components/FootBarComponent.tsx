@@ -21,16 +21,19 @@ export const FootBarComponent = () => {
                 font-semibold
                 "
             >
-           <ul className="text-center">
-              <Link href={'/ubicacion'}><li className="text-sm p-2 rounded-md hover:cursor-pointer hover:text-white hover:bg-fuchsia-900">Ubicación</li></Link>
+           <div className="text-center">
+              <Link href={'/ubicacion'}><h1 className="text-sm p-2 rounded-md hover:cursor-pointer hover:text-white hover:bg-fuchsia-900">Ubicación</h1></Link>
               
-           </ul>
+           </div>
 
-           <ul className="text-center">
-              <Link href={'/ubicacion'}><li className="text-sm p-2 rounded-md hover:cursor-pointer hover:text-white hover:bg-fuchsia-900">Certificaciones</li></Link>
-              
-           </ul>
+           <div className="text-center">
+              <Link href={'/ubicacion'}><h1 className="text-sm p-2 rounded-md hover:cursor-pointer hover:text-white hover:bg-fuchsia-900">Certificaciones</h1></Link>              
+           </div>
            
+           <div className="text-center">
+              <Link href={'/ubicacion'}><h1 className="text-sm p-2 rounded-md hover:cursor-pointer hover:text-white hover:bg-fuchsia-900">Aviso de privacidad</h1></Link>              
+           </div>
+
         </div>
         <div className="border border-[#c4456981] my-5 w-[90%] mx-auto"/>
         <div className="mt-3 bg-black flex justify-center  "><Image src={Banner}  alt="logo" priority /></div>

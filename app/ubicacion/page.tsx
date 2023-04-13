@@ -1,5 +1,6 @@
 import Iframe from "react-iframe"
 import {FaWhatsapp} from 'react-icons/fa'
+import Link from "next/link"
 
 const UbicacionPage = () => {
   return (
@@ -14,7 +15,11 @@ const UbicacionPage = () => {
         </div>
         <div className="flex items-center space-x-2">
             <FaWhatsapp size={35} color="green"/>
-            <span>(646)-127-18-74</span>
+            <span className="text-2xl font-bold"><Link href={'https://wa.me/526461271874'}>(646)-127-18-74</Link></span>
+        </div>
+        
+        <div>
+            <p>Nutrióloga Clínica Ana Karen Juárez</p>
         </div>
 
         <div>
