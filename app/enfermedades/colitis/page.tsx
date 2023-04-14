@@ -1,6 +1,6 @@
 import Iframe from "react-iframe";
 
-export default function HipertensionPage() {
+export default function ColitisPage() {
   return (
     <div>
       <div className="flex flex-col px-10 pt-36">

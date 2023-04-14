@@ -1,6 +1,6 @@
 import Iframe from "react-iframe"
 
-export default function DislipidemiaPage() {
+export default function OvarioPoliquisticoPage() {
   return (
     <div>
       <div className="flex flex-col px-10 pt-36">

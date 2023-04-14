@@ -20,6 +20,10 @@ const rutasMobile = [
     label: 'Enfermedades'
   },
   {
+    ruta: '/recetas',
+    label: 'Recetas'
+  },
+  {
     ruta: '/ubicacion',
     label: 'Ubicación'
   },
@@ -37,6 +41,10 @@ const rutas = [
   {
     ruta: '/enfermedades',
     label: 'Enfermedades'
+  },
+  {
+    ruta: '/recetas',
+    label: 'Recetas'
   },
 ]
 
