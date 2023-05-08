@@ -24,6 +24,10 @@ const rutasMobile = [
     label: 'Recetas'
   },
   {
+    ruta: '/catalogo',
+    label: 'Catálogo'
+  },
+  {
     ruta: '/ubicacion',
     label: 'Ubicación'
   },
@@ -46,6 +50,10 @@ const rutas = [
     ruta: '/recetas',
     label: 'Recetas'
   },
+  {
+    ruta: '/catalogo',
+    label: 'Catálogo'
+  },
 ]
 
 export default function NavbarComponent() {
@@ -56,6 +64,9 @@ export default function NavbarComponent() {
     
   }
 
+  /**
+   * Color base: #e66767
+   */
   return (
     <nav className="fixed w-full h-28 shadow-md bg-[#e66767] z-50">
       <div className="flex justify-between items-center h-full w-full px-10 2xl:px-16 text-white ">

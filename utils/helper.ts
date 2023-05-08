@@ -82,5 +82,17 @@
     {nombre:'Toronja', equivalente: '1 pieza', gramos: 162},
     {nombre:'Tuna', equivalente: '2 pieza', gramos: 140},
     {nombre:'Uva', equivalente: '18 piezas', gramos: 90},
-    
+  ];
+
+  export const leguminosas = [
+    {nombre:'Frijol cocido', equivalente: '1/2 taza', gramos: 100},
+    {nombre:'Frijol molido', equivalente: '1/3 taza', gramos: 75},
+    {nombre:'Frijol entero de lata', equivalente: '1/2 taza', gramos: 130},
+    {nombre:'Frijol refrito, casero o enlatado', equivalente: '40g', gramos: 40},
+    {nombre:'Garbanzo cocido', equivalente: '1/2 taza', gramos: 80},
+    {nombre:'Garbanzo enlatado', equivalente: '1/2 taza', gramos: 120},
+    {nombre:'Hummus', equivalente: '5 cda', gramos: 75},
+    {nombre:'Lenteja cocida', equivalente: '1/2 taza', gramos: 100},
+    {nombre:'Soya cocida', equivalente: '1/3 taza', gramos: 60},
+    {nombre:'Soya texturizada', equivalente: '30g', gramos: 30},
   ];

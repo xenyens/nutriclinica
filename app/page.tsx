@@ -1,8 +1,9 @@
 import Image from 'next/image'
-import { Waterfall } from 'next/font/google'
+import { Waterfall,Sedgwick_Ave_Display } from 'next/font/google'
 import Profile from '../public/profile.jpeg'
 
 const waterfall = Waterfall({ weight: "400", subsets: ["latin"] });
+
 export default function Home() {
   return (
     <main
@@ -22,7 +23,7 @@ export default function Home() {
           md:text-7xl         
         `}
       >
-        Ana Karen Juárez
+        Ana Karen JuáreZ
       </h1>
 
       <div className='flex md:flex-row flex-col mt-16 sm:items-center md:items-start'>
