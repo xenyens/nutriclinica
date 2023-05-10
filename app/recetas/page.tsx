@@ -39,7 +39,7 @@ const RecetasPage = () => {
                 <button type='button' className='bg-[#e5e4def9] w-[90%] rounded-md uppercase font-bold hover:bg-[#b0a9a9]'>Aderezos</button>
             </div> */}
             
-            <div className='bg-[#f7fc97] w-full max-h-[350px] rounded-md flex flex-col items-center border-[4px] border-[#c9c6c6] shadow-md hover:bg-[#ebf52a]'>
+            <div className='bg-[#f7fc97] w-full max-h-[650px] rounded-md flex flex-col items-center border-[4px] border-[#c9c6c6] shadow-md hover:bg-[#ebf52a]'>
                 <Link href={'/bebidas'}>
                     <Image src={desayuno} alt='breakfast' className='w-[100%] h-[85%] p-3'/>
                     <p className='uppercase font-bold text-center bg-[#e5e4def9] px-3 rounded-md'>Bebidas</p>                

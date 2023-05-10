@@ -30,11 +30,11 @@ export const CardBeverage = ({imagen,title,ingredients,instructions}:Props) => {
 
             <div className='mt-5'>
                 <h2 className='text-xl font-[800] my-3'>Preparación</h2>
-                <ul>
+                <ol className="list-disc">
                 {instructions.map((item,key) => {
                     return <li key={key} className="text-lg">{item}</li>
                    })}
-                </ul>
+                </ol>
             </div>
             
         </div>
