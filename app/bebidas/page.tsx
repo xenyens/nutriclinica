@@ -1,40 +1,33 @@
 import Image from 'next/image';
-import bebida01 from '../../public/bebida01.jpeg'
+import { CardBeverage } from '@/components/components/CardBeverage';
 
+import bebida01 from '../../public/jugoverde.jpg'
+import bebida02 from '../../public/jugopepino.jpg'
+
+
+const ingredientes = [
+
+]
 
 export default function Bebidas() {
     return (        
     <div>
-      <div className="flex flex-col items-center pt-36">
+      <div className="flex flex-col items-center pt-36 px-5 bg-gray-100">
 
-        <div className='flex flex-row place-items-start'>
-            <div>
-                <Image src={bebida01} alt='bebida-verde' className='w-[300px] h-[450px]'/>
-            </div> 
+        
+        <CardBeverage
+            imagen={bebida01}
+            title='Jugo verde Dexto'
+            ingredients={['1 taza de espinacas frescas','1 taza de piña en trozos','1 plátano maduro','1/2 taza de agua de coco','Jugo de 1 limón','Hielo al gusto']}
+            instructions={['Coloca todos los ingredientes en una licuadora.','Licua hasta obtener una mezcla suave y homogénea.','Agrega hielo si lo deseas y vuelve a licuar por unos segundos','Sirve y disfruta este batido verde detox cargado de nutrientes']}
+        />
 
-            <div className='ml-6'>
-                <h2 className='text-2xl font-bold'>Batido verde detox</h2>
-                <p>Ingredientes:</p>
-                <ul>
-                    <li>1 taza de espinacas frescas</li>
-                    <li>1 taza de piña en trozos</li>
-                    <li>1 plátano maduro</li>
-                    <li>1/2 taza de agua de coco</li>
-                    <li>Jugo de 1 limón</li>
-                    <li>Hielo al gusto</li>
-                </ul>
-            </div>
-            <div className='ml-10'>
-                <h2 className='text-lg font-bold'>Preparación</h2>
-                <ul>
-                    <li>Coloca todos los ingredientes en una licuadora</li>
-                    <li>Licua hasta obtener una mezcla homogenea</li>
-                    <li>Agrega hielo si lo deseas y vuelve a licuar por unos segundos</li>
-                    <li>Sirve y disfruta este batido verde detox cargado de nutrientes</li>
-                </ul>
-            </div>
-        </div>
-
+        <CardBeverage
+            imagen={bebida02}
+            title='Agua de pepino con limón'
+            ingredients={['1 pepino mediano, pelado y cortado en rodajas','Juego de 2 limones','1 litro de agua','Hojas de menta (opcional)','Hielo al gusto']}
+            instructions={['Coloca el pepino, el jugo de limón y las hojas de menta en una jarra.','Machaca ligeramente los ingredientes con un mortero para liberar los sabores.','Agrega el agua y revuelve bien.','Añade hielo al gusto y deja reposar en el refrigerador durante al menos 1 hora para que los sabores se mezclen.','Sirve frío y disfruta de esta refrescante agua de pepino y limón']}
+        />
         
       </div>
     </div>
